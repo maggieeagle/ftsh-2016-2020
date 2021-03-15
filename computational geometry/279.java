@@ -1,5 +1,6 @@
 //Oryol Margarita 10a
 //Destination from point to section
+//informatics 279
 
 import java.util.Scanner;
 
