@@ -1,6 +1,5 @@
 
-//Орёл Маргарита 10а
-//Образуют ли точки выпуклый многоугольник?
+//Do points form a convex polygon?
 
 import java.util.Scanner;
 
@@ -14,7 +13,7 @@ public class First2 {
 		boolean flag = true;
 		double[][] points2 = points;
 
-		// перенесем начало координат в точку (x1, y1)
+		// ГЇГҐГ°ГҐГ­ГҐГ±ГҐГ¬ Г­Г Г·Г Г«Г® ГЄГ®Г®Г°Г¤ГЁГ­Г ГІ Гў ГІГ®Г·ГЄГі (x1, y1)
 		double x2_new = x2 - x1;
 		double y2_new = y2 - y1;
 		for (int i = 0; i < N; i++) {
@@ -38,10 +37,10 @@ public class First2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// количество точек
+		// ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГІГ®Г·ГҐГЄ
 		N = sc.nextInt();
 		points = new double[N][2];
-		// координаты точек
+		// ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ» ГІГ®Г·ГҐГЄ
 		for (int i = 0; i < N; i++) {
 			points[i][0] = sc.nextDouble();
 			points[i][1] = sc.nextDouble();
