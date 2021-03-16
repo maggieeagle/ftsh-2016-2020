@@ -1,30 +1,23 @@
-
-//ќрЄл ћаргарита 10а
-//¬заимное расположение точек относительно пр€мой
-
 import java.util.Scanner;
 
 public class First1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// две точки, задающие пр€мую
 		double x1 = sc.nextDouble();
 		double y1 = sc.nextDouble();
 		double x2 = sc.nextDouble();
 		double y2 = sc.nextDouble();
 
-		// количество точек
 		int n = sc.nextInt();
 		double[][] points = new double[n][2];
-		// координаты точек
+		
 		for (int i = 0; i < n; i++) {
 			points[i][0] = sc.nextDouble();
 			points[i][1] = sc.nextDouble();
 		}
 		sc.close();
 
-		// перенесем начало координат в точку (x1, y1)
 		double x2_new = x2 - x1;
 		double y2_new = y2 - y1;
 		for (int i = 0; i < n; i++) {
