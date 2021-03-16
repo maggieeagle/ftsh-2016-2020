@@ -12,8 +12,7 @@ public class First2 {
 
 		boolean flag = true;
 		double[][] points2 = points;
-
-		// ïåðåíåñåì íà÷àëî êîîðäèíàò â òî÷êó (x1, y1)
+		
 		double x2_new = x2 - x1;
 		double y2_new = y2 - y1;
 		for (int i = 0; i < N; i++) {
@@ -37,10 +36,9 @@ public class First2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// êîëè÷åñòâî òî÷åê
 		N = sc.nextInt();
 		points = new double[N][2];
-		// êîîðäèíàòû òî÷åê
+
 		for (int i = 0; i < N; i++) {
 			points[i][0] = sc.nextDouble();
 			points[i][1] = sc.nextDouble();
