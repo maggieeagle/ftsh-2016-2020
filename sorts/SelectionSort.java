@@ -34,11 +34,7 @@ public class SelectionSort {
 				long t = t2 - t1;
 				arr_time[n] = t;
 			}
-			System.out
-					.println(size
-							+ "\t"
-							+ (arr_time[0] + arr_time[1] + arr_time[2]
-									+ arr_time[3] + arr_time[4]) / 5);
+			System.out.println(size + "\t" + (arr_time[0] + arr_time[1] + arr_time[2] + arr_time[3] + arr_time[4]) / 5);
 			sc.close();
 		}
 		System.out.print("That's all");
