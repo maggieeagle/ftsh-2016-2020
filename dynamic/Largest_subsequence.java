@@ -1,5 +1,4 @@
-// Oryol Margarita 2020à
-// 
+// Oryol Margarita 2020Ã 
 // 10.10.2018
 
 import java.io.File;
@@ -23,16 +22,11 @@ public class Largest_subsequence {
 			a[i] = 1;
 			x[i] = -1;
 			for(int j = 0;j<i;j++) {
-				if(num[j]<num[i]) {
-				
-				if(a[j]+1>a[i]) {
-					
+				if(num[j]<num[i] && a[j]+1>a[i]) {
 					x[i] = j;
-					a[i] = a[j]+1;
-					
+					a[i] = a[j]+1;		
 				}
-			}}
-			
+			}
 		}
 		int maxSeq = 1;
 		int end = 0;
