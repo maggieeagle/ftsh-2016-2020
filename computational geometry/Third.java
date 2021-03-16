@@ -1,6 +1,3 @@
-//Орёл Маргарита 10а
-//Лежит ли точка внутри выпуклого многоугольника?
-
 import java.util.Scanner;
 
 public class Third {
@@ -8,14 +5,12 @@ public class Third {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// точка
 		double x0 = sc.nextDouble();
 		double y0 = sc.nextDouble();
 
-		// количество вершин
 		int N = sc.nextInt();
 		double[][] points = new double[N][2];
-		// координаты вершин
+		
 		for (int i = 0; i < N; i++) {
 			points[i][0] = sc.nextDouble();
 			points[i][1] = sc.nextDouble();
@@ -31,7 +26,6 @@ public class Third {
 			if(i == N-1) i2 = 0;
 			else i2=i+1;
 			
-			// перенесем начало координат в точку (xi, yi)
 			double x0_new = x0 - points[i][0];
 			double y0_new = y0 - points[i][1];
 			double xi2_new = points[i2][0] - points[i][0];
