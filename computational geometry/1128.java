@@ -4,34 +4,6 @@ public class G {
 
 	public static double a, b, c;
 
-	/*
-	 * public static double dist(double point_x, double point_y, double p1_x, double
-	 * p1_y, double p2_x, double p2_y) {
-	 * 
-	 * double perp_x = (b * (b * point_x - a * point_y) - a * c) / (a * a + b * b);
-	 * double perp_y = (a * (a * point_y - b * point_x) - b * c) / (a * a + b * b);
-	 * 
-	 * System.out.println(perp_x + " " + perp_y);
-	 * 
-	 * double dist;
-	 * 
-	 * //??????? double scalar = (p1_x - point_x)*(p2_x - point_x) + (p1_y -
-	 * point_y)*(p2_y - point_y);
-	 * 
-	 * System.out.println("scalar = " + scalar);
-	 * 
-	 * if (a * perp_x + b * perp_y + c == 0 && scalar <= 0) { dist =
-	 * Math.sqrt((point_x - perp_x) * (point_x - perp_x) + (point_y - perp_y) *
-	 * (point_y - perp_y)); } else { double dist1 = Math.sqrt((point_x - p1_x) *
-	 * (point_x - p1_x) + (point_y - p1_y) * (point_y - p1_y)); double dist2 =
-	 * Math.sqrt((point_x - p2_x) * (point_x - p2_x) + (point_y - p2_y) * (point_y -
-	 * p2_y)); dist = Math.min(dist1, dist2); }
-	 * 
-	 * //System.out.println(dist);
-	 * 
-	 * return dist; }
-	 */
-
 	public static double dist(double x0, double y0, double x1, double y1, double x2, double y2) {
 		
 		double x1_new = x1 - x0;
