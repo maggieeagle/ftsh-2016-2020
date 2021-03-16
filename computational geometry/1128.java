@@ -1,5 +1,3 @@
-//https://informatics.msk.ru/mod/statements/view.php?chapterid=1128#1
-
 import java.util.Scanner;
 
 public class G {
